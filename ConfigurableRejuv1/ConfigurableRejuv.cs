@@ -1,4 +1,5 @@
 ﻿using DeadworksManaged.Api;
+using System.Reflection;
 using System.Text.Json;
 
 namespace ConfigurableRejuv;
@@ -33,7 +34,8 @@ public class ConfigurableRejuv : DeadworksPluginBase
             File.WriteAllText(DataPath, jsonString);
         }
 
-        Console.WriteLine($"[{Name}] Loaded! (reload={isReload})");
+        string[]? ver = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion?.Split('+');
+        Console.WriteLine($"[{Name}] {(ver is not null ? $"v{ver[0]}" : "")} Loaded! (reload={isReload})");
         Console.WriteLine($"Rejuvinator Credits: {Credits.First} first, {Credits.Rest} rest");
     }
 
