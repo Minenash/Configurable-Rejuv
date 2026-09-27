@@ -19,7 +19,7 @@ dw_rejuv_credits [args]
 
 ### Config
 
-Stored at `bin/win64/managed/plugin_data/configurable_rejuv.json` and can be manually edited or set via the command above.
+Stored at `bin/win64/managed/plugin_data/configurable_rejuv.json` and can be manually edited or set via the command above by setting `<bool>` to `true`.
 
 Default config:
 ```json
