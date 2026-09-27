@@ -1,6 +1,7 @@
 # ConfigurableRejuv
 
-A Deadworks plugin that adds a command to change the amount of rejuvenator credits given by the crystal. Defaults to 2/2
+A Deadworks plugin that adds a command to change the amount of rejuvenator credits given by the crystal. \
+Defaults to 2/2
 
 ### Console Command Syntax
 
