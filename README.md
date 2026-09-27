@@ -28,3 +28,7 @@ Default config:
   "Rest": 2
 }
 ```
+
+### Credits
+
+Thanks to @lapka for the code to modify the vdata on attachment. This was way better than my hacky "after the 2nd punch, remove the rejuv after 1 tick. Any melees after the 2nd, but before the removal, ignore" logic.
